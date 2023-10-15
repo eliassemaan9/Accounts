@@ -1,6 +1,8 @@
 ﻿using AccountModels.DTO;
 using AccountModels.Models;
 using AccountRepository.Helper;
+using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.EntityFrameworkCore.Query.Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -93,6 +95,60 @@ namespace AccountRepository
                 return transactions;
             }
            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+        public object getAccountDetails(long customerId)
+        {
+            try
+            {
+               List<AccountTransactionDTO> accountTransactionDTO = new List<AccountTransactionDTO>();
+                List<Transaction> transactionDTO = new List<Transaction>();
+
+                var details = (from C in _context.Customers
+                               join A in _context.Accounts on C.CustomerId equals A.CustomerId
+                               join T in _context.Transactions on A.AccountId equals T.AccountId
+                               where C.CustomerId == customerId
+                               select new
+                               {
+                                customerId =C.CustomerId,
+                                name = C.FirstName +" "+ C.LastName,
+                                accountId =A.AccountId,
+                                accountBalance = A.Balance,
+                                accountType = A.Type,
+                                transactionAmount = T.TransactionAmout,
+                                createdDate = T.CreatedDate,
+                                transactionId = T.TransactionId
+
+                               }).ToList();
+                AccountsInfoDTO accountsInfoDTO = new AccountsInfoDTO();
+                accountsInfoDTO.customerId = details[0].customerId;
+                accountsInfoDTO.name = details[0].name;
+                foreach (var item in details)
+                {
+                    Transaction transaction = new Transaction();
+                    transaction.TransactionAmout = item.transactionAmount;
+                    transaction.CreatedDate = item.createdDate;
+                    transaction.AccountId = item.accountId;
+                    transaction.TransactionId = item.transactionId;
+                    transactionDTO.Add(transaction);
+
+                    AccountTransactionDTO accountTransaction = new AccountTransactionDTO();
+                    accountTransaction.customerId = item.customerId;
+                    accountTransaction.balance = item.accountBalance;
+                    accountTransaction.type = item.accountType;
+                    accountTransaction.accountId = item.accountId;
+                    accountTransaction.transactions = transactionDTO;
+                    accountTransactionDTO.Add(accountTransaction);
+
+                    
+                }
+
+                accountsInfoDTO.account = accountTransactionDTO;
+                return accountsInfoDTO;
+            }
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }

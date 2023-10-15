@@ -69,5 +69,23 @@ namespace Accounts.Controllers
         {
             return Ok(_accountService.GetAccountTransaction(accountId));
         }
+        /// <summary>
+        /// This API works in case the table join is one-to-one only.
+        /// </summary>
+        /// «remarks>
+        /// body input parameters are required to call this API
+        /// </remarks> 
+        /// <response code="200">Success</response> 
+        /// «response code="400">Bad Request</response> 
+        /// «response code="500"> Internal Server Error</responses / «response code-"401">Unauthorized</responses
+        [ProducesResponseType(200, Type = typeof(AccountsInfoDTO))]
+        [ProducesResponseType(400, Type = typeof(BadRequestObjectResult))]
+        [ProducesResponseType(401, Type = typeof(UnauthorizedObjectResult))]
+        [HttpGet]
+        [Route("getAccountInfo")]
+        public IActionResult GetAccountInfo(long customerId)
+        {
+            return Ok(_accountService.getAccountDetails(customerId));
+        }
     }
 }

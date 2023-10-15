@@ -14,5 +14,6 @@ namespace AccountServices
         List<Customer> getCustomers();
         AccountResponseDTO GetCustomersAccounts(long customerId);
         List<Transaction> GetAccountTransaction(long accountId);
+        object getAccountDetails(long customerId);
     }
 }

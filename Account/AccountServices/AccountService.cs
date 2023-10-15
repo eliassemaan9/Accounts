@@ -32,5 +32,9 @@ namespace AccountServices
         {
             return _accountRepository.GetAccountTransaction(accountId);
         }
+        public object getAccountDetails(long customerId)
+        {
+            return _accountRepository.getAccountDetails(customerId);
+        }
 }
 }
