@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mURBuVfaDdaDFcb5aLG+u6rsW5OIkbJhv1SYeInv1KugGusSLgIaA2QcDYWzIuzH6anB/GNfwXbWMsWdGElvqQ==",
+  "dgSpecHash": "Kl9L7OoQHCAJ5YZO1R2HvCU5+Lx9AThz5URshKkpxz0FZ1PV7pIlIJQv5yLzV8MKaxf4y87Bc+CLAjagsNlXGw==",
   "success": true,
-  "projectFilePath": "D:\\source\\Account\\AccountServices\\AccountServices.csproj",
+  "projectFilePath": "D:\\source\\Accounts\\Account\\AccountServices\\AccountServices.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\elias\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.8\\microsoft.aspnetcore.authentication.jwtbearer.6.0.8.nupkg.sha512",
     "C:\\Users\\elias\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

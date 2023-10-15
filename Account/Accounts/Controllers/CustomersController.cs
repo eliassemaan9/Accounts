@@ -13,7 +13,7 @@ namespace Accounts.Controllers
             _accountService = accountService;
         }
         [HttpGet]
-        public IActionResult GetLookupByParantCode()
+        public IActionResult GetCustomers()
         {
             var result = _accountService.getCustomers();
 
