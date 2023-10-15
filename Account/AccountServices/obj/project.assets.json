@@ -1169,11 +1169,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\source\\Account\\AccountServices\\AccountServices.csproj",
+      "projectUniqueName": "D:\\source\\Accounts\\Account\\AccountServices\\AccountServices.csproj",
       "projectName": "AccountServices",
-      "projectPath": "D:\\source\\Account\\AccountServices\\AccountServices.csproj",
+      "projectPath": "D:\\source\\Accounts\\Account\\AccountServices\\AccountServices.csproj",
       "packagesPath": "C:\\Users\\elias\\.nuget\\packages\\",
-      "outputPath": "D:\\source\\Account\\AccountServices\\obj\\",
+      "outputPath": "D:\\source\\Accounts\\Account\\AccountServices\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1195,11 +1195,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\source\\Account\\AccountModels\\AccountModels.csproj": {
-              "projectPath": "D:\\source\\Account\\AccountModels\\AccountModels.csproj"
+            "D:\\source\\Accounts\\Account\\AccountModels\\AccountModels.csproj": {
+              "projectPath": "D:\\source\\Accounts\\Account\\AccountModels\\AccountModels.csproj"
             },
-            "D:\\source\\Account\\AccountRepository\\AccountRepository.csproj": {
-              "projectPath": "D:\\source\\Account\\AccountRepository\\AccountRepository.csproj"
+            "D:\\source\\Accounts\\Account\\AccountRepository\\AccountRepository.csproj": {
+              "projectPath": "D:\\source\\Accounts\\Account\\AccountRepository\\AccountRepository.csproj"
             }
           }
         }

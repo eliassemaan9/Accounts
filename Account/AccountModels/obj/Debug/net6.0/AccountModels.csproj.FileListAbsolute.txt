@@ -12,3 +12,17 @@ D:\source\Account\AccountModels\obj\Debug\net6.0\refint\AccountModels.dll
 D:\source\Account\AccountModels\obj\Debug\net6.0\AccountModels.pdb
 D:\source\Account\AccountModels\obj\Debug\net6.0\AccountModels.genruntimeconfig.cache
 D:\source\Account\AccountModels\obj\Debug\net6.0\ref\AccountModels.dll
+D:\source\Accounts\Account\AccountModels\bin\Debug\net6.0\AccountModels.deps.json
+D:\source\Accounts\Account\AccountModels\bin\Debug\net6.0\AccountModels.runtimeconfig.json
+D:\source\Accounts\Account\AccountModels\bin\Debug\net6.0\AccountModels.dll
+D:\source\Accounts\Account\AccountModels\bin\Debug\net6.0\AccountModels.pdb
+D:\source\Accounts\Account\AccountModels\obj\Debug\net6.0\AccountModels.csproj.AssemblyReference.cache
+D:\source\Accounts\Account\AccountModels\obj\Debug\net6.0\AccountModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\source\Accounts\Account\AccountModels\obj\Debug\net6.0\AccountModels.AssemblyInfoInputs.cache
+D:\source\Accounts\Account\AccountModels\obj\Debug\net6.0\AccountModels.AssemblyInfo.cs
+D:\source\Accounts\Account\AccountModels\obj\Debug\net6.0\AccountModels.csproj.CoreCompileInputs.cache
+D:\source\Accounts\Account\AccountModels\obj\Debug\net6.0\AccountModels.dll
+D:\source\Accounts\Account\AccountModels\obj\Debug\net6.0\refint\AccountModels.dll
+D:\source\Accounts\Account\AccountModels\obj\Debug\net6.0\AccountModels.pdb
+D:\source\Accounts\Account\AccountModels\obj\Debug\net6.0\AccountModels.genruntimeconfig.cache
+D:\source\Accounts\Account\AccountModels\obj\Debug\net6.0\ref\AccountModels.dll
