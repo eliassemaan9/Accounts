@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="./assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="./assets/vendor/datatable/css/jquery.dataTables.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Accounts</title>
+  </head>
+
+  <body>
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-12 text-end">
+          <a href="javascript:;" onclick="logout()">Logout</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1>Accounts</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <form id="viewAccount">
+            <div class="mb-3">
+              <label for="customer" class="form-label fw-bold">Customer</label>
+              <select id="customer" class="form-select" required></select>
+            </div>
+            <div class="mb-3">
+              <button type="submit" id="btnSubmit" class="btn btn-primary">
+                View Customer Accounts
+              </button>
+            </div>
+          </form>
+          <div class="mb-3">
+            <b>First Name:</b> <span id="firstName"></span>
+          </div>
+          <div class="mb-3"><b>Last Name:</b> <span id="lastName"></span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <table class="table" id="accounts">
+            <thead>
+              <th>Balance</th>
+              <th>Action</th>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="transactionsModal"
+      tabindex="-1"
+      aria-labelledby="transactionsModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="transactionsModalLabel">
+              Transactions
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <table class="table" id="transactions">
+              <thead>
+                <th>Amount</th>
+                <th>Created Date</th>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/vendor/jquery/jquery.min.js"></script>
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/vendor/datatable/js/jquery.dataTables.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/view-accounts.js"></script>
+  </body>
+</html>

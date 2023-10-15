@@ -1,0 +1,17 @@
+D:\source\Account\AccountServices\obj\Debug\net6.0\AccountServices.csproj.AssemblyReference.cache
+D:\source\Account\AccountServices\obj\Debug\net6.0\AccountServices.GeneratedMSBuildEditorConfig.editorconfig
+D:\source\Account\AccountServices\obj\Debug\net6.0\AccountServices.AssemblyInfoInputs.cache
+D:\source\Account\AccountServices\obj\Debug\net6.0\AccountServices.AssemblyInfo.cs
+D:\source\Account\AccountServices\obj\Debug\net6.0\AccountServices.csproj.CoreCompileInputs.cache
+D:\source\Account\AccountServices\bin\Debug\net6.0\AccountServices.deps.json
+D:\source\Account\AccountServices\bin\Debug\net6.0\AccountServices.dll
+D:\source\Account\AccountServices\bin\Debug\net6.0\AccountServices.pdb
+D:\source\Account\AccountServices\bin\Debug\net6.0\AccountModels.dll
+D:\source\Account\AccountServices\bin\Debug\net6.0\AccountRepository.dll
+D:\source\Account\AccountServices\bin\Debug\net6.0\AccountModels.pdb
+D:\source\Account\AccountServices\bin\Debug\net6.0\AccountRepository.pdb
+D:\source\Account\AccountServices\obj\Debug\net6.0\AccountServices.csproj.CopyComplete
+D:\source\Account\AccountServices\obj\Debug\net6.0\AccountServices.dll
+D:\source\Account\AccountServices\obj\Debug\net6.0\refint\AccountServices.dll
+D:\source\Account\AccountServices\obj\Debug\net6.0\AccountServices.pdb
+D:\source\Account\AccountServices\obj\Debug\net6.0\ref\AccountServices.dll
